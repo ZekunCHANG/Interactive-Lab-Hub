@@ -32,7 +32,7 @@
 	- Code and video showing servo movement
 	- Explore how different inputs can control physical motion
 
-*️⃣ **D. Feast Automata: Physical Interaction Design**
+*️⃣ **D. Physical Interaction Design: Feast Automata**
 	- 5 sketches exploring ways to combine sensing and physical actuation around eating, drinking, cooking, serving, or sharing food
 	- Pick one design to prototype and explain why
 	- Photos/videos of your cardboard or physical mockup
@@ -119,7 +119,7 @@ B) [More Sensors](#part-b)
 
 C) [Servo Actuation](#part-c)
 
-D) [Feast Automata: Physical Interaction Design](#part-d)
+D) [Physical Interaction Design: Feast Automata](#part-d)
 
 E) [Build & Integrate](#part-e)
 
@@ -271,7 +271,7 @@ For more details and advanced usage, see the [official SparkFun Servo pHAT docum
 A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
 ### Part D
-### Feast Automata: Physical Interaction Design
+### Physical Interaction Design: Feast Automata
 
 **Feast Automata** explores how sensing and actuation can transform ordinary dining rituals into playful physical interactions. Begin with a familiar experience around eating, drinking, cooking, serving, or sharing food, and explore how technology might augment, exaggerate, automate, or reinterpret it.
 
