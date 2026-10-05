@@ -338,9 +338,6 @@ Now that you have explored both sensing and actuation, here is a simple example 
 
 The **Windmill Coaster** uses a Qwiic distance/proximity sensor to detect when a cup is placed on a coaster. When the cup is detected, a servo motor animates a small windmill by sweeping it back and forth, turning an ordinary action during drinking into a playful physical interaction.
 
-<p align="center">
-    <img src="windmill_coaster.gif" alt="Windmill Coaster Demo" width="400"/>
-</p>
 
 This example demonstrates a simple interaction pipeline:
 
