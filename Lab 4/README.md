@@ -1,4 +1,3 @@
-
 # Ph-UI!!!
 
 <details>
@@ -15,40 +14,6 @@
 
 ---
 
-## Lab 4 Deliverables
-
-### Part 1 (Week 1)
-**Submit the following for Part 1:**  
-*️⃣ **A. Capacitive Sensing**
-	- Photos/videos of your Twizzler (or other object) capacitive sensor setup
-	- Code and terminal output showing touch detection
-
-*️⃣ **B. More Sensors**
-	- Photos/videos of each sensor tested (light/proximity, rotary encoder, joystick, distance sensor)
-	- Code and terminal output for each sensor
-
-*️⃣ **C. Servo Actuation**
-	- Set up and control a servo motor using the Servo pHAT
-	- Code and video showing servo movement
-
-*️⃣ **D. Physical Interaction Design: Feast Automata**
-	- 5 sketches exploring ways to combine sensing and physical actuation around eating, drinking, cooking, serving, or sharing food
-	- Pick one design to prototype and explain why
-	- Photos/videos of your cardboard or physical mockup
-
----
-
-### Part 2 (Week 2)
-**Submit the following for Part 2:**  
-*️⃣ **E. Integrated Sensing + Actuation Prototype**
-	- Code and video demonstrating your sensor/input controlling servo-based physical actuation
-	- Reflection on how sensing, movement, and physical form shape the interaction
-
-*️⃣ **F. Final Documentation**
-	- Photos/videos of your final Feast Automata prototype
-	- Written summary: what it looks like, works like, acts like
-	- Reflection on what you learned and next steps
-
 ---
 
 ## Lab Overview
@@ -59,7 +24,27 @@ Clock name: <name>
 
 For lab this week, we focus on both sensing and actuation, bringing new modes of input and output into your devices, while also prototyping the physical structure and overall look of the device. You will consider how the physical form supports sensing and actuation, and how these elements come together to shape the interaction and aesthetics of the device.
 
+---
+
+## Lab Structure
+
+A) [Capacitive Sensing](#part-a)
+
+B) [More Sensors](#part-b)
+
+C) [Servo Actuation](#part-c)
+
+D) [Physical Interaction Design: Feast Automata](#part-d)
+
+E) [Build & Integrate](#part-e)
+
+F) [Final Documentation](#part-f)
+
+---
+
 ## Part 1 Lab Preparation
+
+---
 
 ### Get the latest content:
 As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 3 ways you can do so:
@@ -78,68 +63,7 @@ Option 2: On your own GitHub repo, [create pull request](https://github.com/FAR-
 
 Option 3: (preferred) use the Github.com interface to update the changes.
 
-### Start brainstorming ideas by reading: 
-
-* [What do prototypes prototype?](https://www.semanticscholar.org/paper/What-do-Prototypes-Prototype-Houde-Hill/30bc6125fab9d9b2d5854223aeea7900a218f149)
-* [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. 
-* [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. 
-* [Tips to Cut, Fold, Mold and Papier-Mache Cardboard](https://makezine.com/2016/04/21/working-with-cardboard-tips-cut-fold-mold-papier-mache/) from Make Magazine.
-* [Surprisingly complicated forms](https://www.pinterest.com/pin/50032245843343100/) can be built with paper, cardstock or cardboard.  The most advanced and challenging prototypes to prototype with paper are [cardboard mechanisms](https://www.pinterest.com/helgangchin/paper-mechanisms/) which move and change. 
-* [Dyson Vacuum Cardboard Prototypes](http://media.dyson.com/downloads/JDF/JDF_Prim_poster05.pdf)
-<p align="center"><img src="https://dysonthedesigner.weebly.com/uploads/2/6/3/9/26392736/427342_orig.jpg"  width="200" > </p>
-
-### Feast Automata inspirations:
-
-* [Simone Giertz - The Breakfast Machine](https://www.youtube.com/watch?v=E2evC2xTNWg) turns an everyday breakfast routine into a deliberately awkward robotic performance.
-* [Pee-wee’s Big Adventure - Breakfast Machine](https://www.classhook.com/resources/1295-pee-wee-s-big-adventure-pee-wee-s-breakfast-machine?utm_source=chatgpt.com) turns breakfast into an elaborate Rube Goldberg-style routine.
-* [Wallace & Gromit - The Autochef](https://www.google.com/search?sca_esv=66d2cd5ecf989ed9&sxsrf=APpeQnuwAWHrA3R0b1GeoQ4r-spKos3vUQ:1789367781228&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9XzI_yj6fb6bfPt1x_5u3nRcG7tR9jg4Omd7-UnDuaw5i86wRQqe-045kPXObjb1eDS649ikhB0y_hSFYfNioDnA60A2i_oC1IzIZywb7ERnDQqnSx10JnfJEaAauzJXglx4123_vjf0_54bKrF6QjM9ne5i3g&q=Wallace+%26+Gromit+%E2%80%94+The+Autochef&sa=X&ved=2ahUKEwiI0OO3uu2WAxVHEFkFHQ3iAOEQtKgLegQIFRAB&biw=1197&bih=613&dpr=2.5#fpstate=ive&vld=cid:72c3eb07,vid:2igRcGxlshA,st:0) exaggerates breakfast automation through a mechanical robot.
-* [Nik Ramage - Jelly Wobbler](http://www.youtube.com/watch?v=pj2t71q68sY#t=33) makes the simple act of wobbling jelly into a dedicated machine.
-* [Zekun Chang - Blah Blah](https://zekunchang.com/portfolio/blah-blah/) uses responsive physical behavior to turn a familiar social ritual into a playful installation.
-
-### Mechanical Prototyping Resource
-
-* [Gear Template Generator](https://woodgears.ca/gear_cutting/template.html) can help you prototype simple gear mechanisms for translating servo motion into physical movement.
-
-### Gathering materials for this lab:
-
-* Cardboard (start collecting those shipping boxes!)
-* Found objects and materials--like bananas and twigs.
-* Cutting board
-* Cutting tools
-* Markers
-
-
-(We do offer shared cutting board, cutting tools, and markers on the class cart during the lab, so do not worry if you don't have them!)
-
-## Deliverables \& Submission for Lab 4
-
-The deliverables for this lab are, writings, sketches, photos, and videos that show what your prototype:
-* "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do.
-* "Acts like": shows how a person would interact with the device.
-
-For submission, the readme.md page for this lab should be edited to include the work you have done:
-* Upload any materials that explain what you did, into your lab 4 repository, and link them in your lab 4 readme.md.
-* Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md. 
-* Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
-
-
-## Lab Structure
-
-A) [Capacitive Sensing](#part-a)
-
-B) [More Sensors](#part-b)
-
-C) [Servo Actuation](#part-c)
-
-D) [Physical Interaction Design: Feast Automata](#part-d)
-
-E) [Build & Integrate](#part-e)
-
-F) [Final Documentation](#part-f)
-
-
-## The Report (Part 1: A-D, Part 2: E-F)
+---
 
 ### Quick Start: Python Environment Setup
 
@@ -158,6 +82,21 @@ F) [Final Documentation](#part-f)
 	python blinkatest.py
 	```
 	If you see "Hello blinka!", your setup is correct. If not, follow the troubleshooting steps in the file or ask for help.
+
+---
+
+### Gathering materials for this lab:
+
+* Cardboard (start collecting those shipping boxes!)
+* Found objects and materials--like bananas and twigs.
+* Cutting board
+* Cutting tools
+* Markers
+
+
+(We do offer shared cutting board, cutting tools, and markers on the class cart during the lab, so do not worry if you don't have them!)
+
+---
 
 ### Part A
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
@@ -179,6 +118,8 @@ These Twizzlers are connected to pads 6 and 10. When you run the code and touch 
 Twizzler 10 touched!
 Twizzler 6 touched!
 ```
+
+---
 
 ### Part B
 ### More sensors
@@ -257,6 +198,8 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples
 
+---
+
 ### Part C
 ### Servo Actuation
 
@@ -283,12 +226,36 @@ python pi_servo_hat_test.py
 For more details and advanced usage, see the [official SparkFun Servo pHAT documentation](https://learn.sparkfun.com/tutorials/pi-servo-phat-v2-hookup-guide/all#resources-and-going-further).
 A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
+---
+
 ### Part D
 ### Physical Interaction Design: Feast Automata
 
 **Feast Automata** explores how sensing and actuation can transform ordinary dining rituals into playful physical interactions. Begin with a familiar experience around eating, drinking, cooking, serving, or sharing food, and explore how technology might augment, exaggerate, automate, or reinterpret it.
 
 In this part, use the sensing techniques from Parts A–B and the servo actuation from Part C to develop a physical interaction.
+
+#### Prototyping references 
+
+* [What do prototypes prototype?](https://www.semanticscholar.org/paper/What-do-Prototypes-Prototype-Houde-Hill/30bc6125fab9d9b2d5854223aeea7900a218f149)
+* [Paper prototyping](https://www.uxpin.com/studio/blog/paper-prototyping-the-practical-beginners-guide/) is used by UX designers to quickly develop interface ideas and run them by people before any programming occurs. 
+* [Cardboard prototypes](https://www.youtube.com/watch?v=k_9Q-KDSb9o) help interactive product designers to work through additional issues, like how big something should be, how it could be carried, where it would sit. 
+* [Tips to Cut, Fold, Mold and Papier-Mache Cardboard](https://makezine.com/2016/04/21/working-with-cardboard-tips-cut-fold-mold-papier-mache/) from Make Magazine.
+* [Surprisingly complicated forms](https://www.pinterest.com/pin/50032245843343100/) can be built with paper, cardstock or cardboard.  The most advanced and challenging prototypes to prototype with paper are [cardboard mechanisms](https://www.pinterest.com/helgangchin/paper-mechanisms/) which move and change. 
+* [Dyson Vacuum Cardboard Prototypes](http://media.dyson.com/downloads/JDF/JDF_Prim_poster05.pdf)
+<p align="center"><img src="https://dysonthedesigner.weebly.com/uploads/2/6/3/9/26392736/427342_orig.jpg"  width="200" > </p>
+
+#### Feast Automata inspirations
+
+* [Simone Giertz - The Breakfast Machine](https://www.youtube.com/watch?v=E2evC2xTNWg) turns an everyday breakfast routine into a deliberately awkward robotic performance.
+* [Pee-wee’s Big Adventure - Breakfast Machine](https://www.classhook.com/resources/1295-pee-wee-s-big-adventure-pee-wee-s-breakfast-machine?utm_source=chatgpt.com) turns breakfast into an elaborate Rube Goldberg-style routine.
+* [Wallace & Gromit - The Autochef](https://www.google.com/search?sca_esv=66d2cd5ecf989ed9&sxsrf=APpeQnuwAWHrA3R0b1GeoQ4r-spKos3vUQ:1789367781228&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9XzI_yj6fb6bfPt1x_5u3nRcG7tR9jg4Omd7-UnDuaw5i86wRQqe-045kPXObjb1eDS649ikhB0y_hSFYfNioDnA60A2i_oC1IzIZywb7ERnDQqnSx10JnfJEaAauzJXglx4123_vjf0_54bKrF6QjM9ne5i3g&q=Wallace+%26+Gromit+%E2%80%94+The+Autochef&sa=X&ved=2ahUKEwiI0OO3uu2WAxVHEFkFHQ3iAOEQtKgLegQIFRAB&biw=1197&bih=613&dpr=2.5#fpstate=ive&vld=cid:72c3eb07,vid:2igRcGxlshA,st:0) exaggerates breakfast automation through a mechanical robot.
+* [Nik Ramage - Jelly Wobbler](http://www.youtube.com/watch?v=pj2t71q68sY#t=33) makes the simple act of wobbling jelly into a dedicated machine.
+* [Zekun Chang - Blah Blah](https://zekunchang.com/portfolio/blah-blah/) uses responsive physical behavior to turn a familiar social ritual into a playful installation.
+
+#### Mechanical Prototyping Resource
+
+* [Gear Template Generator](https://woodgears.ca/gear_cutting/template.html) can help you prototype simple gear mechanisms for translating servo motion into physical movement.
 
 #### Physical considerations for sensing
 
@@ -326,13 +293,13 @@ Build a cardboard or other low-fidelity physical prototype of your design.
 
 **\*\*\*Document your rough prototype with photos and/or video.\*\*\***
 
-# LAB PART 2
+---
 
-### Part 2
+## Part 2
 
 Following exploration and reflection from Part 1, complete the "looks like," "works like" and "acts like" prototypes for your design, reiterated below.
 
-
+---
 
 ### Part E
 
@@ -507,6 +474,7 @@ This is a playful way to visualize how the expander works, but the same techniqu
 
 ---
 
+---
 
 ### Part F
 
@@ -517,3 +485,16 @@ Document all the prototypes and iterations you have designed and worked on! Agai
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
 
+---
+
+## Deliverables \& Submission for Lab 4
+
+The deliverables for this lab are, writings, sketches, photos, and videos that show what your prototype:
+* "Looks like": shows how the device should look, feel, sit, weigh, etc.
+* "Works like": shows what the device can do.
+* "Acts like": shows how a person would interact with the device.
+
+For submission, the readme.md page for this lab should be edited to include the work you have done:
+* Upload any materials that explain what you did, into your lab 4 repository, and link them in your lab 4 readme.md.
+* Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md. 
+* Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
