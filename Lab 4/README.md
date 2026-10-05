@@ -111,19 +111,19 @@ For submission, the readme.md page for this lab should be edited to include the 
 * Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
 
 
-## Lab Overview
+## Lab Structure
 
 A) [Capacitive Sensing](#part-a)
 
-B) [OLED screen](#part-b) 
+B) [More Sensors](#part-b)
 
-C) [Paper Display](#part-c)
+C) [Servo Actuation](#part-c)
 
-D) [Materiality](#part-d)
+D) [Feast Automata: Physical Interaction Design](#part-d)
 
-E) [Servo Control](#part-e)
+E) [Build & Integrate](#part-e)
 
-F) [Record the interaction](#part-f)
+F) [Final Documentation](#part-f)
 
 
 ## The Report (Part 1: A-D, Part 2: E-F)
@@ -245,21 +245,45 @@ Connect it to your pi with Qwiic connector and try running the example script to
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples
 
 ### Part C
-### Physical considerations for sensing
+### Servo Actuation
 
+Now that you have explored several forms of sensing, add physical output by learning to control a servo motor. Complete the Servo pHAT setup and basic servo test before beginning your interaction design.
 
-Usually, sensors need to be positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
+### Servo Control with SparkFun Servo pHAT
+For this lab, you will use the **SparkFun Servo pHAT** to control a micro servo (such as the Miuzei MS18 or similar 9g servo). The Servo pHAT stacks directly on top of the Adafruit Mini PiTFT (135×240) display without pin conflicts:
+- The Mini PiTFT uses SPI (GPIO22, 23, 24, 25) for display and buttons ([SPI pinout](https://pinout.xyz/pinout/spi)).
+- The Servo pHAT uses I²C (GPIO2 & 3) for the PCA9685 servo driver ([I2C pinout](https://pinout.xyz/pinout/i2c)).
+- Since SPI and I²C are separate buses, you can use both boards together.
+**⚡ Power:**
+- Plug a USB-C cable into the Servo pHAT to provide enough current for the servos. The Pi itself should still be powered by its own USB-C supply. Do NOT power servos from the Pi’s 5V rail.
 
+<p align="center">
+    <img src="Servo_pHAT.gif" alt="Servo pHAT Demo" width="400"/>
+</p>
 
-**\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
-
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
-
-**\*\*\*Pick one of these designs to prototype.\*\*\***
-
+**Basic Python Example:**
+We provide a simple example script: `Lab 4/pi_servo_hat_test.py` (requires the `pi_servo_hat` Python package).
+Run the example:
+```
+python pi_servo_hat_test.py
+```
+For more details and advanced usage, see the [official SparkFun Servo pHAT documentation](https://learn.sparkfun.com/tutorials/pi-servo-phat-v2-hookup-guide/all#resources-and-going-further).
+A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
 ### Part D
-### Physical considerations for displaying information and housing parts
+### Feast Automata: Physical Interaction Design
+
+**Feast Automata** explores how sensing and actuation can transform ordinary dining rituals into playful physical interactions. Begin with a familiar experience around eating, drinking, cooking, serving, or sharing food, and explore how technology might augment, exaggerate, automate, or reinterpret it.
+
+In this part, use the sensing techniques from Parts A–B and the servo actuation from Part C to develop a physical interaction.
+
+#### Physical considerations for sensing
+
+Sensors need to be positioned in specific locations or orientations to make them useful for an application. Choose a sensor that fits the dining interaction you want to explore. For example, a distance sensor could detect when a cup is placed on a coaster; where the sensor is positioned determines what it can reliably detect.
+
+Think about how the larger object needs to be shaped so the sensor can work reliably, where the actuator needs to sit, what moves, and how a person encounters the interaction.
+
+#### Physical Form, Display, and Housing
 
 
 
@@ -297,21 +321,21 @@ Here is an example:
 
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
 
-Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
- 
-**\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+Use these examples as references for thinking about physical form, component placement, access to electronics, and how feedback or movement is presented to a user.
 
-**\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+**Example application: Windmill Coaster.** A cup placed on a coaster is detected by a distance sensor, and a servo animates a small windmill. The interaction turns an ordinary action during drinking into a playful physical response.
 
-**\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+As you develop your Feast Automata concept, consider where the sensor and actuator need to be placed, what parts move, how electronics are housed, and how the overall form and aesthetics support the interaction.
 
-**\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+**\*\*\*Draw 5 sketches that explore different physical arrangements for your sensing and actuation.\*\*\***
 
-Build a cardboard prototype of your design.
+**\*\*\*What questions do these sketches raise? What do you need to physically prototype to answer them?\*\*\***
 
+**\*\*\*Pick one design to prototype and explain why.\*\*\***
 
-**\*\*\*Document your rough prototype.\*\*\***
+Build a cardboard or other low-fidelity physical prototype of your design.
 
+**\*\*\*Document your rough prototype with photos and/or video.\*\*\***
 
 # LAB PART 2
 
@@ -323,13 +347,15 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 
 ### Part E
 
-#### Chaining Devices and Exploring Interaction Effects
+#### Build & Integrate: Sensing + Actuation
 
-For Part 2, you will design and build a fun interactive prototype using multiple inputs and outputs. This means chaining Qwiic and STEMMA QT devices (e.g., buttons, encoders, sensors, servos, displays) and/or combining with traditional breadboard prototyping (e.g., LEDs, buzzers, etc.).
+For Part 2, build the Feast Automata interaction you developed in Part D by connecting sensing/input to physical actuation.
 
 **Your prototype should:**
-- Combine at least two different types of input and output devices, inspired by your physical considerations from Part 1.
-- Be playful, creative, and demonstrate multi-input/multi-output interaction.
+- Use at least one sensing or input device.
+- Use servo-based physical actuation.
+- Connect sensing and actuation into a meaningful interaction around eating, drinking, cooking, serving, or sharing food.
+- Additional inputs, displays, LEDs, buttons, or other outputs are optional extensions.
 
 **Document your system with:**
 - Code for your multi-device demo
@@ -349,7 +375,11 @@ See encoder_accel_servo_dashboard.py in the Lab 4 folder for an example of chain
 
 **`Lab 4/encoder_accel_servo_dashboard.py`**
 
-#### Using Multiple Qwiic Buttons: Changing I2C Address (Physically & Digitally)
+#### Optional Extensions
+
+The following examples are optional resources if you want to add more inputs or outputs to your prototype.
+
+##### Using Multiple Qwiic Buttons: Changing I2C Address (Physically & Digitally)
 
 If you want to use more than one Qwiic Button in your project, you must give each button a unique I2C address. There are two ways to do this:
 
@@ -429,7 +459,7 @@ For more details, see the [Qwiic Button Hookup Guide](https://learn.sparkfun.com
 
 ---
 
-### PCF8574 GPIO Expander: Add More Pins Over I²C
+##### PCF8574 GPIO Expander: Add More Pins Over I²C
 
 Sometimes your Pi’s header GPIO pins are already full (e.g., with a display or HAT). That’s where an I²C GPIO expander comes in handy.
 
@@ -461,33 +491,13 @@ This is a playful way to visualize how the expander works, but the same techniqu
 
 ---
 
-### Servo Control with SparkFun Servo pHAT
-For this lab, you will use the **SparkFun Servo pHAT** to control a micro servo (such as the Miuzei MS18 or similar 9g servo). The Servo pHAT stacks directly on top of the Adafruit Mini PiTFT (135×240) display without pin conflicts:
-- The Mini PiTFT uses SPI (GPIO22, 23, 24, 25) for display and buttons ([SPI pinout](https://pinout.xyz/pinout/spi)).
-- The Servo pHAT uses I²C (GPIO2 & 3) for the PCA9685 servo driver ([I2C pinout](https://pinout.xyz/pinout/i2c)).
-- Since SPI and I²C are separate buses, you can use both boards together.
-**⚡ Power:**
-- Plug a USB-C cable into the Servo pHAT to provide enough current for the servos. The Pi itself should still be powered by its own USB-C supply. Do NOT power servos from the Pi’s 5V rail.
-
-<p align="center">
-    <img src="Servo_pHAT.gif" alt="Servo pHAT Demo" width="400"/>
-</p>
-
-**Basic Python Example:**
-We provide a simple example script: `Lab 4/pi_servo_hat_test.py` (requires the `pi_servo_hat` Python package).
-Run the example:
-```
-python pi_servo_hat_test.py
-```
-For more details and advanced usage, see the [official SparkFun Servo pHAT documentation](https://learn.sparkfun.com/tutorials/pi-servo-phat-v2-hookup-guide/all#resources-and-going-further).
-A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
 ---
 
 
 ### Part F
 
-### Record
+### Final Documentation
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
