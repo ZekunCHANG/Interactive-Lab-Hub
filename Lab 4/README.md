@@ -282,8 +282,6 @@ Your kit includes these [SparkFun Qwiic OLED screens](https://www.sparkfun.com/p
 </p>
 
 
-**Example application: Windmill Coaster.** A cup placed on a coaster is detected by a distance sensor, and a servo animates a small windmill. The interaction turns an ordinary action during drinking into a playful physical response.
-
 As you develop your Feast Automata concept, consider where the sensor and actuator need to be placed, what parts move, how electronics are housed, and how the overall form and aesthetics support the interaction.
 
 **\*\*\*Draw 5 sketches that explore different physical arrangements for your sensing and actuation.\*\*\***
