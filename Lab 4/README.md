@@ -27,28 +27,26 @@
 	- Photos/videos of each sensor tested (light/proximity, rotary encoder, joystick, distance sensor)
 	- Code and terminal output for each sensor
 
-*️⃣ **C. Physical Sensing Design**
-	- 5 sketches of different ways to use your chosen sensor
-	- Written reflection: questions raised, what to prototype
-	- Pick one design to prototype and explain why
+*️⃣ **C. Servo Actuation**
+	- Set up and control a servo motor using the Servo pHAT
+	- Code and video showing servo movement
+	- Explore how different inputs can control physical motion
 
-*️⃣ **D. Display & Housing**
-	- 5 sketches for display/button/knob positioning
-	- Written reflection: questions raised, what to prototype
-	- Pick one display design to integrate
-	- Rationale for design
-	- Photos/videos of your cardboard prototype
+*️⃣ **D. Feast Automata: Physical Interaction Design**
+	- 5 sketches exploring ways to combine sensing and physical actuation around eating, drinking, cooking, serving, or sharing food
+	- Pick one design to prototype and explain why
+	- Photos/videos of your cardboard or physical mockup
 
 ---
 
 ### Part 2 (Week 2)
 **Submit the following for Part 2:**  
-*️⃣ **E. Multi-Device Demo**
-	- Code and video for your multi-input multi-output demo (e.g., chaining Qwiic buttons, servo, GPIO expander, etc.)
-	- Reflection on interaction effects and chaining
+*️⃣ **E. Integrated Sensing + Actuation Prototype**
+	- Code and video demonstrating your sensor/input controlling servo-based physical actuation
+	- Reflection on how sensing, movement, and physical form shape the interaction
 
 *️⃣ **F. Final Documentation**
-	- Photos/videos of your final prototype
+	- Photos/videos of your final Feast Automata prototype
 	- Written summary: what it looks like, works like, acts like
 	- Reflection on what you learned and next steps
 
@@ -58,7 +56,7 @@
 **NAMES OF COLLABORATORS HERE**
 
 
-For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
+For lab this week, we focus on both sensing and actuation, bringing new modes of input and output into your devices, while also prototyping the physical structure and overall look of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
 
