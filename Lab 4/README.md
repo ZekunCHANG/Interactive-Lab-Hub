@@ -375,6 +375,30 @@ See encoder_accel_servo_dashboard.py in the Lab 4 folder for an example of chain
 
 **`Lab 4/encoder_accel_servo_dashboard.py`**
 
+#### Example Application: Windmill Coaster
+
+Now that you have explored both sensing and actuation, here is a simple example that combines the two.
+
+The **Windmill Coaster** uses a Qwiic distance/proximity sensor to detect when a cup is placed on a coaster. When the cup is detected, a servo motor animates a small windmill by sweeping it back and forth, turning an ordinary action during drinking into a playful physical interaction.
+
+This example demonstrates a simple interaction pipeline:
+
+**cup placed → distance sensor detects cup → servo actuates windmill**
+
+Connect the Qwiic distance sensor to the Pi and connect the servo to Channel 0 of the Servo pHAT. Make sure the Servo pHAT is powered through its USB-C connection.
+
+Run the example script:
+
+```bash
+python windmill_coaster.py
+```
+
+The script continuously reads the proximity value from the distance sensor. When the value passes a threshold, the servo begins animating the windmill. When the cup is removed, the servo stops and returns to its resting position.
+
+You may need to adjust `CUP_THRESHOLD` in [`windmill_coaster.py`](windmill_coaster.py) depending on the size of your cup and the physical placement of the sensor. You can run `qwiic_distance.py` first to compare readings with and without a cup.
+
+Use this example as a starting point. Change the sensor, movement, physical form, or dining interaction to create your own Feast Automata variation.
+
 #### Optional Extensions
 
 The following examples are optional resources if you want to add more inputs or outputs to your prototype.
