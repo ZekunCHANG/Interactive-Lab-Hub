@@ -30,7 +30,6 @@
 *️⃣ **C. Servo Actuation**
 	- Set up and control a servo motor using the Servo pHAT
 	- Code and video showing servo movement
-	- Explore how different inputs can control physical motion
 
 *️⃣ **D. Physical Interaction Design: Feast Automata**
 	- 5 sketches exploring ways to combine sensing and physical actuation around eating, drinking, cooking, serving, or sharing food
@@ -61,13 +60,13 @@ For lab this week, we focus on both sensing and actuation, bringing new modes of
 ## Part 1 Lab Preparation
 
 ### Get the latest content:
-As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 2 ways you can do so:
+As always, pull updates from the class Interactive-Lab-Hub to both your Pi and your own GitHub repo. As we discussed in the class, there are 3 ways you can do so:
 
 
 Option 1: On the Pi, `cd` to your `Interactive-Lab-Hub`, pull the updates from upstream (class lab-hub) and push the updates back to your own GitHub repo. You will need the personal access token for this.
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2025
+pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2026
 pi@ixe00:~/Interactive-Lab-Hub $ git add .
 pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab4 content"
 pi@ixe00:~/Interactive-Lab-Hub $ git push
@@ -295,7 +294,7 @@ Sensors need to be positioned in specific locations or orientations to make them
 
 Think about how the larger object needs to be shaped so the sensor can work reliably, where the actuator needs to sit, what moves, and how a person encounters the interaction.
 
-#### Physical Form, Display, and Housing
+#### Physical Form and Housing
 
 
 
@@ -312,14 +311,6 @@ Here is another prototype for a paper display:
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/b_box.png?raw=true"  width="250"/>
 
 
-Your kit includes these [SparkFun Qwiic OLED screens](https://www.sparkfun.com/products/17153). These use less power than the MiniTFTs you have mounted on the GPIO pins of the Pi, but, more importantly, they can be more flexibly mounted elsewhere on your physical interface. The way you program this display is almost identical to the way you program a  Pi display. Take a look at `oled_test.py` and some more of the [Adafruit examples](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/tree/master/examples).
-
-<p float="left">
-<img src="https://cdn.sparkfun.com//assets/parts/1/6/1/3/5/17153-SparkFun_Qwiic_OLED_Display__0.91_in__128x32_-01.jpg" height="200" />
-
-</p>
-
-
 It holds a Pi and usb power supply, and provides a front stage on which to put writing, graphics, LEDs, buttons or displays.
 
 This design can be made by scoring a long strip of corrugated cardboard of width X, with the following measurements:
@@ -334,6 +325,16 @@ Here is an example:
 <img src="https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2020Fall/images/horoscope.png?raw=true"  width="250"/>
 
 Use these examples as references for thinking about physical form, component placement, access to electronics, and how feedback or movement is presented to a user.
+
+#### Optional Display Feedback: Qwiic OLED
+
+Your kit includes these [SparkFun Qwiic OLED screens](https://www.sparkfun.com/products/17153). These use less power than the MiniTFTs you have mounted on the GPIO pins of the Pi, but, more importantly, they can be more flexibly mounted elsewhere on your physical interface. The way you program this display is almost identical to the way you program a  Pi display. Take a look at `oled_test.py` and some more of the [Adafruit examples](https://github.com/adafruit/Adafruit_CircuitPython_SSD1306/tree/master/examples).
+
+<p float="left">
+<img src="https://cdn.sparkfun.com//assets/parts/1/6/1/3/5/17153-SparkFun_Qwiic_OLED_Display__0.91_in__128x32_-01.jpg" height="200" />
+
+</p>
+
 
 **Example application: Windmill Coaster.** A cup placed on a coaster is detected by a distance sensor, and a servo animates a small windmill. The interaction turns an ordinary action during drinking into a playful physical response.
 
@@ -370,20 +371,20 @@ For Part 2, build the Feast Automata interaction you developed in Part D by conn
 - Additional inputs, displays, LEDs, buttons, or other outputs are optional extensions.
 
 **Document your system with:**
-- Code for your multi-device demo
+- Code for your sensing + actuation prototype
 - Photos and/or video of the working prototype in action
-- A simple interaction diagram or sketch showing how inputs and outputs are connected and interact
-- Written reflection: What did you learn about multi-input/multi-output interaction? What was fun, surprising, or challenging?
+- A simple interaction diagram or sketch showing how sensing and actuation are connected
+- Written reflection: What did you learn about connecting sensing, movement, and physical form? What was fun, surprising, or challenging?
 
 **Questions to consider:**
-- What new types of interaction become possible when you combine two or more sensors or actuators?
-- How does the physical arrangement of devices (e.g., where the encoder or sensor is placed) change the user experience?
-- What happens if you use one device to control or modulate another (e.g., encoder sets a threshold, sensor triggers an action)?
-- How does the system feel if you swap which device is "primary" and which is "secondary"?
+- How does your chosen sensor or input shape the physical response?
+- How does the physical arrangement of the sensor and actuator change the interaction?
+- What thresholds, timing, or movement patterns make the interaction feel clear or playful?
+- What changes when you adjust the sensor placement or servo motion?
 
-Try chaining different combinations and document what you discover!
+Iterate on the sensing, movement, and physical form, and document what you discover.
 
-See encoder_accel_servo_dashboard.py in the Lab 4 folder for an example of chaining together three devices.
+See encoder_accel_servo_dashboard.py in the Lab 4 folder for an optional example of chaining together three devices.
 
 **`Lab 4/encoder_accel_servo_dashboard.py`**
 
