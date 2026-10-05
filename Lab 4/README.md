@@ -231,7 +231,7 @@ A servo motor is a rotary actuator that allows for precise control of angular po
 ### Part D
 ### Physical Interaction Design: Feast Automata
 
-**Feast Automata** explores how sensing and actuation can transform ordinary dining rituals into playful physical interactions. Begin with a familiar experience around eating, drinking, cooking, serving, or sharing food, and explore how technology might augment, exaggerate, automate, or reinterpret it.
+**Feast Automata:** build a device that **transforms ordinary dining rituals into playful physical interactions.** Begin with a familiar experience around eating, drinking, cooking, serving, or sharing food, and explore how sensing and actuation might augment, exaggerate, automate, or reinterpret your dining experience.
 
 In this part, use the sensing techniques from Parts A–B and the servo actuation from Part C to develop a physical interaction.
 
